@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>snake</title>
+    <meta name="description" content="Simple snake game, controlled with your mobile phone">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/core.css">
+</head>
+<body>
+
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<header>
+
+    <h1>Snake</h1>
+
+    <div id="act_pos">
+
+    </div>
+
+    <div id="connection_window">
+        Bitte verbinden Sie ein Gerät!<br/>
+    </div>
+
+    <div id="device_connected">
+        Das Gerät ist verbunden. Drücken Sie nun auf Start um das Spiel zu beginnen.
+    </div>
+
+    <div class="key">
+        Für Sie wurde eine individuelle ID erstellt.<br/>
+        Gehen Sie mit Ihrem Device auf die gleiche Seite und tippen Sie folgenden Verbindungscode auf Ihrem Device ein.
+        <div>
+            <h1 id="individual_conn_key"></h1>
+        </div>
+    </div>
+
+    <span id="score_view"><span id="score">0</span> Punkte</span>
+</header>
+
+<div id="game">
+    <canvas id="canvas" width="500" height="500"></canvas>
+</div>
+
+<!-- MUSIC -->
+
+<audio loop preload id="main_audio">
+    <source src="/music/background_music.mp3" type="audio/mpeg"></source>
+    Your browser does not support the audio element.
+</audio>
+<audio id="applaus">
+    <source src="/music/applaus.mp3" type="audio/mpeg"></source>
+    Your browser does not support the audio element.
+</audio>
+
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- socket.io -->
+<script src="/socket.io/socket.io.js"></script>
+<!-- APP CODE -->
+
+<script src="http://momentjs.com/downloads/moment-with-locales.min.js"></script>
+<script src="/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="js/app.min.js"></script>
+</body>
+</html>

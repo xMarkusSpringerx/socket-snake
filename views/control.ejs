@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta charset="utf-8">
+    <title>snake</title>
+    <meta name="description" content="Simple snake game, controlled with your mobile phone">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/control.css">
+</head>
+<body id="complete-control">
+
+<!--[if lt IE 8]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<h1>Snake</h1>
+<form class="input_room">
+    <label>
+        <input type="tel" name="input_room" placeholder="Room Number eingeben">
+        <span>Room Number</span>
+    </label>
+
+    <div id="submit_room_nr" >Send</div>
+</form>
+
+<a class="start-btn">
+    <div>
+        Start<br/>
+        <br/>
+        Du kannst mit Hilfe der normalen Swipe-Gesten auf dem Bildschirm die Schlange steuern.
+    </div>
+</a>
+
+<!-- jQuery -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<!-- socket.io -->
+<script src="/socket.io/socket.io.js"></script>
+<!-- APP CODE -->
+<script src="js/fastclick.js"></script>
+
+<script src="/sweetalert/dist/sweetalert.min.js"></script>
+<script src="js/control.js"></script>
+</body>
+</html>

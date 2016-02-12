@@ -1,0 +1,28 @@
+html, body {
+    font-family: 'Bangers', cursive;
+}
+
+header {
+    text-align: center;
+}
+
+#game {
+    margin: auto;
+}
+
+#device_connected {
+    display: none;
+}
+
+#score_view {
+    display: none;
+    font-size: 25px;
+}
+
+#act_pos {
+    font-size: 30px;
+}
+
+.sweet-alert {
+    width: 550px;
+}

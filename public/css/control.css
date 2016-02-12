@@ -1,0 +1,104 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: #35dc9b;
+    font-family: 'Bangers', cursive;
+    overflow-y: hidden; // (vertical)
+    overflow-x: hidden; // (horizontal)
+
+}
+
+h1 {
+    display: table;
+    margin: 40px auto;
+    color: #fff;
+    font: 20px Helvetica;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.start-btn {
+    width: 100%;
+    margin: 20% 0 0 0;
+    background-color: #70F0B0;
+    text-align: center;
+    vertical-align: middle;
+    display: none;
+}
+
+.start-btn div {
+    padding: 50px 20px;
+}
+
+
+
+form {
+    display: table;
+    margin: 40px auto;
+}
+
+form label {
+    position: relative;
+    display: block;
+}
+
+form label input {
+    font: 18px Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+
+form label input::placeholder {
+    transition: all 0.2s ease-in-out;
+    color: #999;
+    font: 18px Helvetica, Arial, sans-serif;
+}
+
+form label input:focus, form label input.populated {
+    padding-top: 28px;
+    padding-bottom: 12px;
+}
+
+form label input:focus::placeholder, form label input.populated::placeholder {
+    color: transparent;
+}
+
+form label input:focus + span, form label input.populated + span {
+    opacity: 1;
+    top: 10px;
+}
+
+form label span {
+    color: #35dc9b;
+    font: 13px Helvetica, Arial, sans-serif;
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+form #submit_room_nr {
+    transition: all 0.2s ease-in-out;
+    font: 18px Helvetica, Arial, sans-serif;
+    border: none;
+    background: #1aaf75;
+    color: #fff;
+    padding: 16px 40px;
+    text-align:center;
+}
+
+form #submit_room_nr:hover {
+    background: #109f67;
+}
