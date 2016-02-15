@@ -3,7 +3,7 @@
 Socket snake is a project which is based on NodeJS and socket.io
 The goal of the project was a snake game where you can control the snake via swipe gestures on you mobile phone.
 
-### Who does this work?
+### How does this work?
 ![Alt Text](https://github.com/xMarkusSpringerx/socket-snake/blob/master/giphy.gif)
 
 After starting the Node-Server the server can detect whether a smartphone or a desktop browser connects to the server. 
